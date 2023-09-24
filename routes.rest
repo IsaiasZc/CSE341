@@ -1,0 +1,5 @@
+GET localhost:8080/contacts
+# The contacts list
+
+GET localhost:8080/contacts/:id
+# Get a contact by ID
