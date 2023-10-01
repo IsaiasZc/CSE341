@@ -1,5 +1,24 @@
-GET localhost:8080/contacts
-# The contacts list
+### The contacts list
+GET http://localhost:8080/contacts
 
-GET localhost:8080/contacts/:id
-# Get a contact by ID
+### Get one contact
+GET http://localhost:8080/contacts/650fdecf6de5987d73ad4961
+
+### create a new contact
+POST http://localhost:8080/contacts/
+
+{
+  "firstName": "Isaias",
+  "lastName": "Zuniga",
+  "birthday": "1996-08-09"
+}
+
+### update a contact
+PUT http://localhost:8080/contacts/6518fb8c455842929aea32ac
+
+{
+  "firstName": "Patricio"
+}
+
+### delete a contact
+DELETE http://localhost:8080/contacts/6518fb8c455842929aea32ac
