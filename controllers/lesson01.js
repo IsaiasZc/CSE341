@@ -6,7 +6,7 @@ const rosangelicaVasquez = (req, res) => res.send('Rosangelica Vasquez')
 
 const notFound = (req, res) => res.send('404 not found...')
 
-export default {
+module.exports = {
   nickJara,
   isaiasZuniga,
   rosangelicaVasquez,

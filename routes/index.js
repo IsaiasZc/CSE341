@@ -1,7 +1,6 @@
-import { Router } from 'express'
-import contactsRouter from './contacts.js'
-
-import lesson01Controller from '../controllers/lesson01.js'
+const { Router } = require('express')
+const contactsRouter = require('./contacts.js')
+const lesson01Controller = require('../controllers/lesson01.js')
 
 const router = Router()
 
@@ -15,4 +14,4 @@ router.use('/contacts', contactsRouter)
 
 router.get('*', lesson01Controller.notFound)
 
-export default router
+module.exports = router

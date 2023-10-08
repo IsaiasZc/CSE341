@@ -1,5 +1,5 @@
-import { Router } from 'express'
-import contacts from '../controllers/contacts.js'
+const { Router } = require('express')
+const contacts = require('../controllers/contacts.js')
 
 const router = Router()
 
@@ -13,4 +13,4 @@ router.put('/:id', contacts.updateContact)
 
 router.delete('/:id', contacts.deleteContact)
 
-export default router
+module.exports = router

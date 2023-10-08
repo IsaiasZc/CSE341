@@ -1,4 +1,5 @@
-import mongoose, { Schema } from 'mongoose'
+const mongoose = require('mongoose')
+const { Schema } = mongoose
 
 const contactsSchema = new Schema({
   firstName: String,
@@ -70,7 +71,7 @@ const deleteContact = async (req, res) => {
   return res.status(200).send({ message: 'Contact deleted' })
 }
 
-export default {
+module.exports = {
   getAllContacts,
   getContact,
   createContact,
