@@ -1,4 +1,4 @@
-import swaggerAutogen from 'swagger-autogen'
+const swaggerAutogen = require('swagger-autogen')
 
 swaggerAutogen()
 
@@ -7,8 +7,8 @@ const doc = {
     title: 'Contacts API',
     description: 'CSE 341 - week 04'
   },
-  host: 'localhost:8080',
-  schemes: ['http']
+  host: 'cse341-isaias.onrender.com',
+  schemes: ['https']
 }
 
 const outputFile = './swagger.json'
