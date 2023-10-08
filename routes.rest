@@ -10,6 +10,8 @@ POST http://localhost:8080/contacts/
 {
   "firstName": "Isaias",
   "lastName": "Zuniga",
+  "email": "test@test.com",
+  "favoriteColor": "blue",
   "birthday": "1996-08-09"
 }
 

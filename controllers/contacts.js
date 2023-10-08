@@ -34,6 +34,7 @@ const createContact = async (req, res) => {
   const { body } = req
 
   const invalid = requiredFields.some((field) => !body[field])
+  console.log(requiredFields.find((field) => !body[field]))
 
   if (invalid) {
     res.status(400).json({ message: 'Missing required fields' })
